@@ -4,7 +4,7 @@ build-backend = "scikit_build_core.build"
 
 [project]
 name = "alpha-features-core"
-version = "0.1.6"
+version = "0.1.7"
 description = "Fast C++ implementation of Alpha191 financial factors"
 readme = "README.md"
 license = {text = "MIT"}
@@ -15,3 +15,8 @@ dependencies = ["numpy", "pandas"]
 wheel.packages = ["alpha_features_core"]
 cmake.build-type = "Release"
 cmake.minimum-version = "3.15"
+
+[project.urls]
+Homepage = "https://github.com/GiovanniPioDelvecchio/alpha_features_core/tree/main"
+Repository = "https://github.com/GiovanniPioDelvecchio/alpha_features_core/tree/main"
+"Bug Tracker" = "https://github.com/GiovanniPioDelvecchio/alpha_features_core/issues"
