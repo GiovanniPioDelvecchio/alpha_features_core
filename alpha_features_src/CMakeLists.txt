@@ -9,6 +9,8 @@ pybind11_add_module(alpha_features_core
     ${CMAKE_CURRENT_SOURCE_DIR}/bindings.cpp
 )
 
+set_target_properties(alpha_features_lib PROPERTIES POSITION_INDEPENDENT_CODE ON)
+
 target_link_libraries(alpha_features_core PRIVATE alpha_features_lib)
 target_include_directories(alpha_features_lib PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
 

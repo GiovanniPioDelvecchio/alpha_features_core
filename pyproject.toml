@@ -4,7 +4,7 @@ build-backend = "scikit_build_core.build"
 
 [project]
 name = "alpha-features-core"
-version = "0.1.7"
+version = "0.1.8"
 description = "Fast C++ implementation of Alpha191 financial factors"
 readme = "README.md"
 license = {text = "MIT"}
