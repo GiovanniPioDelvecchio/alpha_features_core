@@ -1,0 +1,17 @@
+[build-system]
+requires = ["scikit-build-core>=0.4", "pybind11>=2.11"]
+build-backend = "scikit_build_core.build"
+
+[project]
+name = "alpha-features-core"
+version = "0.1.6"
+description = "Fast C++ implementation of Alpha191 financial factors"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.8"
+dependencies = ["numpy", "pandas"]
+
+[tool.scikit-build]
+wheel.packages = ["alpha_features_core"]
+cmake.build-type = "Release"
+cmake.minimum-version = "3.15"
