@@ -121,6 +121,10 @@ All remaining 160+ factors match the Python backend within floating-point tolera
 
 The DataFrame must be sorted by `[ticker, date]`. Column names can be customised via keyword arguments to `compute_alphas_cpp()`.
 
+Performance boost in using C++ vs pure Python:
+
+![Benchmark](Benchmark.png)
+
 ## License
 
 MIT
