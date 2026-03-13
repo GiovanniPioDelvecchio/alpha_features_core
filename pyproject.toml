@@ -4,19 +4,46 @@ build-backend = "scikit_build_core.build"
 
 [project]
 name = "alpha-features-core"
-version = "0.1.9"
-description = "Fast C++ implementation of Alpha191 financial factors"
+version = "0.2.0"
+description = "Fast C++ implementation of the Alpha191 quantitative finance factor library"
 readme = "README.md"
 license = {text = "MIT"}
 requires-python = ">=3.8"
+keywords = [
+    "alpha191", "quantitative finance", "algorithmic trading",
+    "factors", "alpha factors", "quant", "finance", "C++",
+    "pybind11", "high performance", "OHLCV"
+]
 dependencies = ["numpy", "pandas", "tqdm", "numba"]
+
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Financial and Insurance Industry",
+    "Intended Audience :: Science/Research",
+    "Topic :: Office/Business :: Financial",
+    "Topic :: Office/Business :: Financial :: Investment",
+    "Topic :: Scientific/Engineering :: Mathematics",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: C++",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/TUOUSERNAME/alpha-features-core"
+Repository = "https://github.com/TUOUSERNAME/alpha-features-core"
+"Bug Tracker" = "https://github.com/TUOUSERNAME/alpha-features-core/issues"
+Documentation = "https://github.com/TUOUSERNAME/alpha-features-core#readme"
 
 [tool.scikit-build]
 wheel.packages = ["alpha_features_core"]
 cmake.build-type = "Release"
 cmake.minimum-version = "3.15"
 
-[project.urls]
-Homepage = "https://github.com/GiovanniPioDelvecchio/alpha_features_core/tree/main"
-Repository = "https://github.com/GiovanniPioDelvecchio/alpha_features_core/tree/main"
-"Bug Tracker" = "https://github.com/GiovanniPioDelvecchio/alpha_features_core/issues"
+[tool.scikit-build.sdist]
+exclude = ["_build/*", "data_download/*", "lib_test/*", "build/*"]
