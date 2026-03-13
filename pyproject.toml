@@ -4,7 +4,7 @@ build-backend = "scikit_build_core.build"
 
 [project]
 name = "alpha-features-core"
-version = "0.2.0"
+version = "0.2.1"
 description = "Fast C++ implementation of the Alpha191 quantitative finance factor library"
 readme = "README.md"
 license = {text = "MIT"}
@@ -35,10 +35,9 @@ classifiers = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/TUOUSERNAME/alpha-features-core"
-Repository = "https://github.com/TUOUSERNAME/alpha-features-core"
-"Bug Tracker" = "https://github.com/TUOUSERNAME/alpha-features-core/issues"
-Documentation = "https://github.com/TUOUSERNAME/alpha-features-core#readme"
+Homepage = "https://github.com/GiovanniPioDelvecchio/alpha_features_core"
+Repository = "https://github.com/GiovanniPioDelvecchio/alpha_features_core"
+"Bug Tracker" = "https://github.com/GiovanniPioDelvecchio/alpha_features_core/issues"
 
 [tool.scikit-build]
 wheel.packages = ["alpha_features_core"]
